@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,17 @@
 		66CFCC362446BAD900AE5F8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66CFCC352446BAD900AE5F8D /* Assets.xcassets */; };
 		66CFCC392446BAD900AE5F8D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66CFCC382446BAD900AE5F8D /* Preview Assets.xcassets */; };
 		66CFCC3C2446BAD900AE5F8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66CFCC3A2446BAD900AE5F8D /* LaunchScreen.storyboard */; };
+		66CFCC4624473B2400AE5F8D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 66CFCC4524473B2400AE5F8D /* GoogleService-Info.plist */; };
+		66CFCC4924473E5C00AE5F8D /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CFCC4824473E5C00AE5F8D /* Account.swift */; };
+		66CFCC4C24473F3E00AE5F8D /* SavingYourAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CFCC4B24473F3E00AE5F8D /* SavingYourAccount.swift */; };
+		66CFCC50244743B700AE5F8D /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CFCC4F244743B700AE5F8D /* Networking.swift */; };
+		66CFCC522447442400AE5F8D /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CFCC512447442400AE5F8D /* Authentication.swift */; };
+		E3ED0E79511E2AA4A2E394D4 /* Pods_SaveAccount.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0169DE3DEC02DB1F2E3353D0 /* Pods_SaveAccount.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0169DE3DEC02DB1F2E3353D0 /* Pods_SaveAccount.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaveAccount.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DF79BBEEAB2E0453390B35E /* Pods-SaveAccount.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaveAccount.debug.xcconfig"; path = "Target Support Files/Pods-SaveAccount/Pods-SaveAccount.debug.xcconfig"; sourceTree = "<group>"; };
 		66CFCC2C2446BAD400AE5F8D /* SaveAccount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaveAccount.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66CFCC2F2446BAD400AE5F8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66CFCC312446BAD400AE5F8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,12 @@
 		66CFCC382446BAD900AE5F8D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		66CFCC3B2446BAD900AE5F8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66CFCC3D2446BAD900AE5F8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66CFCC4524473B2400AE5F8D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		66CFCC4824473E5C00AE5F8D /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		66CFCC4B24473F3E00AE5F8D /* SavingYourAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingYourAccount.swift; sourceTree = "<group>"; };
+		66CFCC4F244743B700AE5F8D /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		66CFCC512447442400AE5F8D /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		D6EFD12BB79A9EA3C2010D30 /* Pods-SaveAccount.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaveAccount.release.xcconfig"; path = "Target Support Files/Pods-SaveAccount/Pods-SaveAccount.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3ED0E79511E2AA4A2E394D4 /* Pods_SaveAccount.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		629DC0B88FF468E549A50DE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0169DE3DEC02DB1F2E3353D0 /* Pods_SaveAccount.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		66CFCC232446BAD400AE5F8D = {
 			isa = PBXGroup;
 			children = (
 				66CFCC2E2446BAD400AE5F8D /* SaveAccount */,
 				66CFCC2D2446BAD400AE5F8D /* Products */,
+				D1004DDF42DDBC7EE74699F8 /* Pods */,
+				629DC0B88FF468E549A50DE9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +83,13 @@
 			children = (
 				66CFCC2F2446BAD400AE5F8D /* AppDelegate.swift */,
 				66CFCC312446BAD400AE5F8D /* SceneDelegate.swift */,
-				66CFCC332446BAD400AE5F8D /* ContentView.swift */,
+				66CFCC4724473D6100AE5F8D /* Views */,
 				66CFCC352446BAD900AE5F8D /* Assets.xcassets */,
 				66CFCC3A2446BAD900AE5F8D /* LaunchScreen.storyboard */,
 				66CFCC3D2446BAD900AE5F8D /* Info.plist */,
+				66CFCC4524473B2400AE5F8D /* GoogleService-Info.plist */,
+				66CFCC532447446700AE5F8D /* Networking */,
+				66CFCC4A24473E6F00AE5F8D /* Models */,
 				66CFCC372446BAD900AE5F8D /* Preview Content */,
 			);
 			path = SaveAccount;
@@ -75,6 +103,42 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		66CFCC4724473D6100AE5F8D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				66CFCC332446BAD400AE5F8D /* ContentView.swift */,
+				66CFCC4B24473F3E00AE5F8D /* SavingYourAccount.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		66CFCC4A24473E6F00AE5F8D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				66CFCC4824473E5C00AE5F8D /* Account.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		66CFCC532447446700AE5F8D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				66CFCC4F244743B700AE5F8D /* Networking.swift */,
+				66CFCC512447442400AE5F8D /* Authentication.swift */,
+			);
+			name = Networking;
+			path = Models/Networking;
+			sourceTree = "<group>";
+		};
+		D1004DDF42DDBC7EE74699F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0DF79BBEEAB2E0453390B35E /* Pods-SaveAccount.debug.xcconfig */,
+				D6EFD12BB79A9EA3C2010D30 /* Pods-SaveAccount.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +146,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66CFCC402446BAD900AE5F8D /* Build configuration list for PBXNativeTarget "SaveAccount" */;
 			buildPhases = (
+				50F001CDE31B3282F51E5773 /* [CP] Check Pods Manifest.lock */,
 				66CFCC282446BAD400AE5F8D /* Sources */,
 				66CFCC292446BAD400AE5F8D /* Frameworks */,
 				66CFCC2A2446BAD400AE5F8D /* Resources */,
+				4143339637D8D9C54E67F127 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66CFCC3C2446BAD900AE5F8D /* LaunchScreen.storyboard in Resources */,
+				66CFCC4624473B2400AE5F8D /* GoogleService-Info.plist in Resources */,
 				66CFCC392446BAD900AE5F8D /* Preview Assets.xcassets in Resources */,
 				66CFCC362446BAD900AE5F8D /* Assets.xcassets in Resources */,
 			);
@@ -141,13 +208,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4143339637D8D9C54E67F127 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SaveAccount/Pods-SaveAccount-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SaveAccount/Pods-SaveAccount-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SaveAccount/Pods-SaveAccount-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50F001CDE31B3282F51E5773 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SaveAccount-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		66CFCC282446BAD400AE5F8D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66CFCC522447442400AE5F8D /* Authentication.swift in Sources */,
 				66CFCC302446BAD400AE5F8D /* AppDelegate.swift in Sources */,
+				66CFCC4924473E5C00AE5F8D /* Account.swift in Sources */,
 				66CFCC322446BAD400AE5F8D /* SceneDelegate.swift in Sources */,
+				66CFCC50244743B700AE5F8D /* Networking.swift in Sources */,
+				66CFCC4C24473F3E00AE5F8D /* SavingYourAccount.swift in Sources */,
 				66CFCC342446BAD400AE5F8D /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +395,7 @@
 		};
 		66CFCC412446BAD900AE5F8D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DF79BBEEAB2E0453390B35E /* Pods-SaveAccount.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +415,7 @@
 		};
 		66CFCC422446BAD900AE5F8D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6EFD12BB79A9EA3C2010D30 /* Pods-SaveAccount.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
